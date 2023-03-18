@@ -1,0 +1,23 @@
+[
+  {
+    "subject": "physics",
+    "email": "john.smith@example.com",
+    "notice": {
+      "notice": "We will start our class soon"
+    }
+  },
+  {
+    "subject": "english",
+    "email": "mike.brown@example.com",
+    "notice": {
+      "notice": "We will start our class soon"
+    }
+  },
+  {
+    "subject": "math",
+    "email": "sarah.johnson@example.com",
+    "notice": {
+      "notice": "We will start our class soon"
+    }
+  }
+]

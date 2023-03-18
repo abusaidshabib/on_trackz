@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import ApiContext from "./Context/ApiContext";
+import AuthContext from "./Context/AuthContext";
+import router from "./Routes/Router/router";
+import { GlobalStyle } from "./Styled-component/Global-component";
+import theme from "./Styled-component/Theme/Dark";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme} >
+      <GlobalStyle></GlobalStyle>
+      <ApiContext>
+        <AuthContext>
+          <RouterProvider router={router} />
+        </AuthContext>
+      </ApiContext>
+    </ThemeProvider>
   );
 }
 
