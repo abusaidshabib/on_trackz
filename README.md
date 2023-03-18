@@ -10,4 +10,10 @@ Classroom database
 
   Attendance
 
-  id, date, 
+  id, date,
+
+
+  Log in using
+
+  email & pass: student1@gmail.com
+  teacher email & pass: elone@gmail.com
